@@ -29,6 +29,10 @@ public class SaveCalculator {
 	}
 
 	public double division(int value1, int value2) {
+		long value = (long) value1 / (long) value2;
+		if (value > Integer.MAX_VALUE) {
+			throw new ArithmeticException();
+		}
 		return value1 / value2;
 	}
 
