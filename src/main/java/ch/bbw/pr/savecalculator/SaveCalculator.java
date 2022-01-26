@@ -31,7 +31,12 @@ public class SaveCalculator {
 	public double division(int value1, int value2) {
 		return value1 / value2;
 	}
+
 	private double multiplication(Integer value1, Integer value2) {
+		long value = (long) value1 *  (long) value2;
+		if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)){
+			throw new ArithmeticException();
+		}
 		return value1 * value2;
 	}
 	//pow
