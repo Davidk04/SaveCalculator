@@ -45,6 +45,11 @@ public class SaveCalculator {
 		}
 		return value1 * value2;
 	}
+
+	protected double dreieck(int seite, int hoehe) {
+		return (double) seite * (double) hoehe / 2;
+	}
+
 	//pow
 	//sqrt
 	//...

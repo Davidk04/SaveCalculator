@@ -37,4 +37,12 @@ public class SaveCalculatorTest {
         int value2 = 20;
         assertEquals(-10, testee.subtraktion(value1, value2));
     }
+
+    //Sichbarkeit
+    @Test
+    public void testDreieckDreiPositivIstOk() {
+        int seite = 10;
+        int hoehe = 10;
+        testee.dreieck(seite, hoehe);
+    }
 }
