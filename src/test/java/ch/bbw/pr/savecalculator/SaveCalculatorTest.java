@@ -227,6 +227,15 @@ public class SaveCalculatorTest {
         int value2 = Integer.MIN_VALUE;
         testee.division(value1, value2);
     }
+
+    //Private
+    //Es geht nicht da es Private ist
+    //@Test
+    //public void testPrivateTest() {
+    //    int value1 = 10;
+    //    int value2 = 20;
+    //    assertEquals(30, testee.privateTest(value1, value2));
+    //}
 }
 
 
