@@ -19,7 +19,7 @@ public class SaveCalculator {
 	}
 
 	//Noch un-safe Methoden, die müssen noch angepasst werden.
-	public int subtraktion(int value1, int value2)
+	public int subtraktion(int value1, int value2) throws ArithmeticException
 	{
 		long value = (long) value1 - (long) value2;
 		if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)) {
@@ -28,7 +28,8 @@ public class SaveCalculator {
 		return value1 - value2;
 	}
 
-	public double division(int value1, int value2) {
+	public double division(int value1, int value2) throws ArithmeticException
+	{
 		long value = (long) value1 / (long) value2;
 		if (value > Integer.MAX_VALUE) {
 			throw new ArithmeticException();
@@ -36,7 +37,8 @@ public class SaveCalculator {
 		return value1 / value2;
 	}
 
-	private double multiplication(Integer value1, Integer value2) {
+	private double multiplication(Integer value1, Integer value2) throws ArithmeticException
+	{
 		long value = (long) value1 *  (long) value2;
 		if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)){
 			throw new ArithmeticException();
