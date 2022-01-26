@@ -6,10 +6,10 @@ import static org.junit.Assert.*;
 public class SaveCalculatorTest {
 
     @Test
-    public void summe() {
+    public void testSumZweiPositiveIsOk() {
         SaveCalculator testee = new SaveCalculator();
         int value1 = 10;
         int value2 = 20;
-        assertTrue(testee.summe(value1, value2) == 30);
+        assertEquals(30, testee.summe(value1, value2));
     }
 }
